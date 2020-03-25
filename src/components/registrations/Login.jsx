@@ -61,41 +61,45 @@ render() {
     const {username, email, password} = this.state
 return (
       <div>
-        <h1>Log In</h1>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            placeholder="username"
-            type="text"
-            name="username"
-            value={username}
-            onChange={this.handleChange}
-          />
-          <input
-            placeholder="email"
-            type="text"
-            name="email"
-            value={email}
-            onChange={this.handleChange}
-          />
-          <input
-            placeholder="password"
-            type="password"
-            name="password"
-            value={password}
-            onChange={this.handleChange}
-          />
-          <button placeholder="submit" type="submit">
-            Log In
-          </button>
-          <div>
-            or <Link to='/signup'>sign up</Link>
-          </div>
-          
+        <section className="form-registrer">
+          <h1>Log In</h1>
+          <form onSubmit={this.handleSubmit}>
+            <input className="control"
+              placeholder="username"
+              type="text"
+              name="username"
+              value={username}
+              onChange={this.handleChange}
+            />
+            <input className="control"
+              placeholder="email"
+              type="text"
+              name="email"
+              value={email}
+              onChange={this.handleChange}
+            />
+            <input className="control"
+              placeholder="password"
+              type="password"
+              name="password"
+              value={password}
+              onChange={this.handleChange}
+            />
+            <button className="btn btn-outline-light center" placeholder="submit" type="submit">
+              Log In
+            </button>
+            
+            <div>
+            <br></br>
+              or <Link className="links" to='/signup'>sign up</Link>
+            </div>
+            
           </form>
-          <div>
-          {
-            this.state.errors ? this.handleErrors() : null
-          }
+        </section>
+        <div>
+        {
+          this.state.errors ? this.handleErrors() : null
+        }
         </div>
       </div>
     );

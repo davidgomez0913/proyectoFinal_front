@@ -1,0 +1,57 @@
+/*
+    This file will be converted
+    with Webpack into plain CSS,
+    it includes all the styles we might need.
+
+    Don't worry about the rest of .styl
+    files, are just small parts to create
+    the style for the App.
+*/
+@require "./helpers/reset"
+@require "./helpers/mixins"
+@require "./helpers/miscelanous"
+@require "./components/*"
+
+:root
+    scrollbar
+
+// General Elements Styling
+html
+    font-family: font-family-default, font-family-serif
+    max-width: 100vw
+    min-height: 100vh
+    scroll-behavior: smooth
+
+    body
+        background-color: "#0e2a59";
+        background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+        font-family: @font-family
+        height: 100%
+        line-height: line-height-LG
+        max-width: @max-width
+        min-height: 100vh
+        overflow-x: hidden
+        scroll-behavior: @scroll-behavior
+        width: 100vw
+
+        scrollbar
+        *
+            color: color-yellow
+            line-height: inherit
+            scroll-behavior: @scroll-behavior
+
+
+h1
+h2
+h3
+h4
+h5
+h6
+    font-family: font-family-title, font-family-sans
+
+#aplicationfinal
+    width: 100%
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center

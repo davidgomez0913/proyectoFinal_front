@@ -1,38 +1,125 @@
-.App {
+
+.fondo{
+  background-color: #0e2a59;
+  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png') 
+}
+/* ------------------------------------- FORMULARIO ------------------------------------- */
+.control{
+  width: 100%;
+  background: transparent;
+  padding: 10px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  font-family: 'calibri';
+  font-size: 15px;
+  color: white;
+}
+.controlmenu:hover{
+  background: transparent;
+  color: black;
+}
+.form-registrer{
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 7px;
+  font-family: 'calibri';
+  color: white;
+  border: 1px solid white;
+}
+.form-registrer h4{
+  font-size: 24px;
+  margin-bottom: 20px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+label{
+  font-size: 1.2vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.links{
+  display: inline-block;
+  color: rgb(236, 240, 12);
+  text-decoration: none;
+  line-height: normal;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+.links:hover{
+  text-decoration: none;
+  background: #3470d4;
+  color:#c4cacf;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* ------------------------------------------ Eventos ----------------------------------- */
+.listwraper{
+  display: flex;
+}
+.centrado{
+  text-align: center;
+}
+.imagenes_evento{
+  width: 60vw;
+  height: 20vw;
+  margin-bottom: 30px;
+}
+
+/* ------------------------------------- Cabecera --------------------------------------------*/
+
+header{
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #040233;
+  /*background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png') ;*/
+  margin-bottom: 20px;
+  
+}  
+
+.cabecera{
+  justify-content: space-between;
+  align-content: space-between;
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+  overflow: hidden;
+  
+}
+
+header .logo{
+  line-height: 90px;
+  float: left;
+}
+
+.imglogo{
+  width :20vw; 
+  height:8vh;
+  overflow: hidden;
+}
+
+header nav{
+  float: right;
+  line-height: 100px;
+}
+
+.cabeceraLinks{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  line-height: normal;
+  padding: 10px 20px;
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+.cabeceraLinks:hover{
+  background: #3470d4;
+  border-radius: 60px;
+  text-decoration: none;
+  color: white;
 }
