@@ -8,8 +8,12 @@ class CreateEvent extends Component {
       super(props)
       this.state = {
         events: [],
+        
         namevalue: '',
-        categoryvalue: ''
+        categoryvalue: '',
+        fechavalue:'',
+        quotavalue:'',
+        imagevalue:''
       }
       }
     
@@ -24,7 +28,11 @@ class CreateEvent extends Component {
             })
             this.setState({
               events: events,
-              namevalue: ''
+              namevalue: '',
+              categoryrvalue: '',
+              fechavalue:'',
+              quotavalue:'',
+              imagevalue:''
             })
           })
           .catch(error => console.log(error))      
@@ -56,11 +64,11 @@ class CreateEvent extends Component {
                 <h4>Creacion de Eventos</h4>
 
                 <input className="control" type="text" 
-                    placeholder="Event Name" maxLength="100"
+                    placeholder="Nombre del Evento" maxLength="100"
                     value={this.state.namevalue} onChange={this.handleName}/>
 
                 <select value={this.state.categoryrvalue} onChange={this.handleCategory} className="control controlmenu" name="menu">
-                    <option> Select Category </option>
+                    <option> Seleccione la Categoria </option>
                     <option value="Concierto">Concierto</option>
                     <option value="Evento Deportivo">Evento Deportivo</option>
                     <option value="Conferencia">Conferencia</option>
@@ -77,7 +85,7 @@ class CreateEvent extends Component {
                     placeholder="Url imagen"
                     value={this.state.imagevalue} onChange={this.handleImage} />
 
-                <button onClick={(event) => this.createEvent(event)} type="button" className="btn btn-outline-light center">Create Event</button>
+                <button onClick={(event) => this.createEvent(event)} type="button" className="btn btn-outline-light center">Crear Evento</button>
               
             </section>        
                 

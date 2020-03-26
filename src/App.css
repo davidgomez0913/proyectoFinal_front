@@ -24,7 +24,7 @@
   background-color: rgba(255, 255, 255, 0.05);
   padding: 30px;
   margin: auto;
-  margin-top: 100px;
+  margin-top: 30px;
   border-radius: 7px;
   font-family: 'calibri';
   color: white;
@@ -67,6 +67,19 @@ label{
   width: 60vw;
   height: 20vw;
   margin-bottom: 30px;
+}
+.nota{
+  font-weight: bold;
+  font-size: 1.2vw;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-bottom: 13px;
+}
+.notaEdit{
+  color: wheat;
+}
+.bloque{
+  margin: 5px;
 }
 
 /* ------------------------------------- Cabecera --------------------------------------------*/

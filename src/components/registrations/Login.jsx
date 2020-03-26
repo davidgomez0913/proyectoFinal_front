@@ -20,10 +20,10 @@ handleChange = (event) => {
       [name]: value
     })
   };
-handleSubmit = (event) => {
+  handleSubmit = (event) => {
     event.preventDefault()
     const {username, email, password} = this.state
-let user = {
+    let user = {
       username: username,
       email: email,
       password: password
@@ -42,10 +42,10 @@ let user = {
     })
     .catch(error => console.log('api errors:', error))
   };
-redirect = () => {
+  redirect = () => {
     this.props.history.push('/')
   }
-handleErrors = () => {
+  handleErrors = () => {
     return (
       <div>
         <ul>
